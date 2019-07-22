@@ -2,6 +2,11 @@
 #include <windowsx.h>
 #include <tchar.h>
 #include "resource.h"
+#include <delayimp.h>
+#include "DelayLoadLib.h"
+
+#pragma comment(lib, "Delayimp.lib")
+#pragma comment(linker, "/DelayLoad")
 
 #define ESM_POKECODEANDLOOKUP	(WM_USER + 100)
 const TCHAR g_szAppName[] = TEXT("Error Show");
@@ -82,6 +87,10 @@ INT_PTR WINAPI Dlg_Proc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 	return FALSE;
 }
 
+HHOOK hHook = SetWindowsHookEx(WH_GETMESSAGE, GetMsgProc, hinstDll, 0);
+UnhookWindowsHookEx(hHook);
+GetFirstChild(GetFirstChild(FindWindow(__TEXT("ProgMan"), NULL)));
+PostThreadMessage(dwThreadId, WM_NULL, 0, 0);
 int WINAPI _tWinMain(HINSTANCE hInstExe, HINSTANCE, PTSTR pszCmdLine, int)
 {
 	HWND hwnd = FindWindow(TEXT("#32770"), TEXT("Error Show"));

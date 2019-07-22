@@ -79,12 +79,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="CmmHdr.h" />
+    <ClInclude Include="DelayLoadLib.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="winkernelStudy.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DelayLoadLib.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
