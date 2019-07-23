@@ -9,7 +9,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "singleton_3_1", "..\singlet
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dumpModule_4_1", "..\dumpModule_4_1\dumpModule_4_1.vcxproj", "{8A7B469C-6EB5-4BA8-9B34-97E3B1D2F071}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "commandlineToArgvW", "..\commandlineToArgvW\commandlineToArgvW.vcxproj", "{9796DF35-7533-4338-8BB2-6BC1CE8DAF1D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "commandlineToArgvW4_1_3", "..\commandlineToArgvW\commandlineToArgvW.vcxproj", "{9796DF35-7533-4338-8BB2-6BC1CE8DAF1D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DumpEnvStrings", "..\DumpEnvStrings\DumpEnvStrings.vcxproj", "{4F2F522A-A824-4D58-AE42-70BF2D97E22C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{9796DF35-7533-4338-8BB2-6BC1CE8DAF1D}.Debug|Win32.Build.0 = Debug|Win32
 		{9796DF35-7533-4338-8BB2-6BC1CE8DAF1D}.Release|Win32.ActiveCfg = Release|Win32
 		{9796DF35-7533-4338-8BB2-6BC1CE8DAF1D}.Release|Win32.Build.0 = Release|Win32
+		{4F2F522A-A824-4D58-AE42-70BF2D97E22C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4F2F522A-A824-4D58-AE42-70BF2D97E22C}.Debug|Win32.Build.0 = Debug|Win32
+		{4F2F522A-A824-4D58-AE42-70BF2D97E22C}.Release|Win32.ActiveCfg = Release|Win32
+		{4F2F522A-A824-4D58-AE42-70BF2D97E22C}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
