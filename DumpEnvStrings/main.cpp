@@ -4,6 +4,24 @@
 #include <windowsx.h>
 #include <strsafe.h>
 
+void PrintEnvironmentVariable(PCTSTR pszVariableName)
+{
+	PTSTR pszValue = NULL;
+	DWORD dwResult = GetEnvironmentVariable(pszVariableName, pszValue, 0);
+	if (0 != dwResult)
+	{
+		//分配内存给环境变量
+		DWORD size = dwResult * sizeof(TCHAR);
+		pszValue = (PTSTR)malloc(size);
+		GetEnvironmentVariable(pszVariableName, pszValue, size);
+		_tprintf(TEXT("%s = %s\n"), pszVariableName, pszValue);
+		free(pszValue);
+	}
+	else
+	{
+		_tprintf(TEXT("'%s' = <unknown value>\n"), pszVariableName);
+	}
+}
 void DumpEnvVariables(PTSTR pEnvBlock[])
 {
 	int current = 0;
