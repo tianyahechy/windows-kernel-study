@@ -3,6 +3,28 @@
 #include <string>
 #include <windowsx.h>
 #include <strsafe.h>
+
+void DumpEnvVariables(PTSTR pEnvBlock[])
+{
+	int current = 0;
+	PTSTR* pElement = (PTSTR*)pEnvBlock;
+	PTSTR pCurrent = NULL;
+	while (pElement != NULL)
+	{
+		pCurrent = (PTSTR)(*pElement);
+		//没有更多的环境变量了
+		if (NULL == pCurrent)
+		{
+			pElement = NULL;
+		}
+		else
+		{
+			_tprintf(TEXT("[%u] %s\r\n"), current, pCurrent);
+			current++;
+			pElement++;
+		}
+	}
+}
 void DumpEnvStrings()
 {
 	PTSTR pEnvBlock = GetEnvironmentStrings();
