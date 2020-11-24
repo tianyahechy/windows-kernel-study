@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "winkernelStudy", "winkernelStudy.vcxproj", "{24A0FAC0-942A-44BA-B64D-4EA8408C10AB}"
 EndProject
@@ -46,6 +46,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "8.4.0临界区", "..\8.4.0临界区\8.4.0临界区.vcxproj", "{111D3E1F-2C72-40F0-8B15-2979787EFC44}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "8.4.2关键代码段与循环锁", "..\8.4.2关键代码段与循环锁\8.4.2关键代码段与循环锁.vcxproj", "{682E6063-AB43-4298-8AE9-A8C2CE1A8688}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "9.3事件内核对象", "..\9.3事件内核对象\9.3事件内核对象.vcxproj", "{AFB4FDBC-E5D1-4C83-9C93-C6FFFFBD5A0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -221,8 +223,19 @@ Global
 		{682E6063-AB43-4298-8AE9-A8C2CE1A8688}.Release|Win32.Build.0 = Release|Win32
 		{682E6063-AB43-4298-8AE9-A8C2CE1A8688}.Release|x64.ActiveCfg = Release|x64
 		{682E6063-AB43-4298-8AE9-A8C2CE1A8688}.Release|x64.Build.0 = Release|x64
+		{AFB4FDBC-E5D1-4C83-9C93-C6FFFFBD5A0D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AFB4FDBC-E5D1-4C83-9C93-C6FFFFBD5A0D}.Debug|Win32.Build.0 = Debug|Win32
+		{AFB4FDBC-E5D1-4C83-9C93-C6FFFFBD5A0D}.Debug|x64.ActiveCfg = Debug|x64
+		{AFB4FDBC-E5D1-4C83-9C93-C6FFFFBD5A0D}.Debug|x64.Build.0 = Debug|x64
+		{AFB4FDBC-E5D1-4C83-9C93-C6FFFFBD5A0D}.Release|Win32.ActiveCfg = Release|Win32
+		{AFB4FDBC-E5D1-4C83-9C93-C6FFFFBD5A0D}.Release|Win32.Build.0 = Release|Win32
+		{AFB4FDBC-E5D1-4C83-9C93-C6FFFFBD5A0D}.Release|x64.ActiveCfg = Release|x64
+		{AFB4FDBC-E5D1-4C83-9C93-C6FFFFBD5A0D}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {322FE0F8-64BB-40B6-AAC2-A82DA0AB6531}
 	EndGlobalSection
 EndGlobal
